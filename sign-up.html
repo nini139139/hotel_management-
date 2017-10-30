@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-vidth, initial-scale=1.0"> 
+        <title>HOTEL</title>
+        <!---------------vendors css--------------->
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+        <!---------------end vendors scc--------------->
+
+        <!---------------bootstrap vendors css--------------->
+        <link href="bootstrapVendors/css/bootstrap.css" rel="stylesheet">
+        <!---------------end bootstrap vendors css--------------->
+
+        <!---------------jquery/ajax/waypoint scripts--------------->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="vendors/js/jquery.waypoints.min.js"></script>
+        <!---------------end jquery/ajax--------------->
+
+        <!---------------resource js--------------->
+        <script type="text/javascript" language="javascript" src="resource/js/sign-up-js/sign-up.js" ></script>
+        <script src="resource/js/sign-up-js/jquery.popupoverlay.js"></script>
+        <script type="text/javascript" language="javascript" src="resource/js/script.js" ></script>
+        <!---------------resource js--------------->
+
+        <!---------------resource css--------------->
+        <link href="resource/css/style.css" rel="stylesheet">
+        <link href="resource/css/sign-up.css" rel="stylesheet">
+        <!---------------resource css--------------->
+
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!---------------start nav-bar--------------->
+        <nav>
+            <div class="topnav">
+                <!--mobile nav icon-->
+                <div class="logo">
+                    <a href="#main">HOTELS</a>
+                    <a class="mobile-nav-icon js--nav--icon"><i class="ion-navicon-round"></i></a>
+                </div>
+                <div class="navContents js--main-nav">
+                    <a href="index.html">Home</a>
+                    <a href="about-us.html">About Us</a>
+                    <a href="add-hotel.html">Add Hotel</a>
+                    <a href="contact-us.html">Contact Us</a>
+                </div>
+                <div class="sign js--main-nav">
+                    <a class="login" href="sign-up.html">Sign up
+                        <i class="glyphicon glyphicon-log-in"></i>
+                    </a>
+                    <a class="register" href="#">log out
+                        <i class="glyphicon glyphicon-log-out"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>    
+        <!---------------end nav-bar--------------->
+
+        <!---------------start wrapper--------------->
+        <div class="wrapper full-screen-wrapper" >
+            <!---------------start sign section--------------->
+            <div class="sign-up">
+                <div class="main-logo">
+                    <i class="ion-person-stalker"> </i>
+                </div>
+                <div>
+                    <h1>Please Login as:</h1>
+                </div>
+                <div class="sign-up-btns">
+                    <a href="#" class="initialism fadeandscale_open btn-sign-up btn-employee blue-btn"><i class="ion-android-person"></i>
+                        employee
+                    </a>
+                    <a href="employee.html" class="initialism fade_open btn-sign-up btn-company blue-btn"><i class="ion-ios-people"></i>
+                        company
+                    </a>
+                </div>
+            </div>
+            <!---------------end sign section--------------->
+        </div>
+        <!--------------- end wrapper--------------->
+
+
+        <!---------------start employee popup--------------->
+        <div id="fadeandscale" class="well sign-up-container">
+            <a class="fadeandscale_close popup-close blue-btn">
+                <span class="ion-android-close"></span>
+            </a>
+            <i class="ion-android-person"></i>
+            <div class="prettyprint">
+                <div class="username">
+                    <label>Username :</label>
+                    <input placeholder="enter username">
+                </div>
+                <div class="user-password">
+                    <label>Password :</label>
+                    <input type="password" placeholder="enter password">
+                </div>
+            </div>
+            <a class="popup-login blue-btn" href="employee.html">Login</a>
+            <div class="register-forget-container">
+                <a class="slide_open  registration" href="register-user.html">Registration</a>
+                <span>/</span>
+                <a class="forgot-password" href="forgot-password.html">Forgot password?</a>
+            </div>
+        </div>
+        <!--------------- end employee popup--------------->
+
+
+
+        <!--------------- start company popup--------------->
+        <div id="fade" class="well sign-up-container">
+            <a class="fade_close popup-close blue-btn">
+                <span class="ion-android-close"></span>
+            </a>
+            <i class="ion-ios-people"></i>
+            <div class="prettyprint">
+                <div class="username">
+                    <label>Company name :</label>
+                    <input placeholder="enter company name">
+                </div>
+                <div class="user-password">
+                    <label>Password :</label>
+                    <input type="password" placeholder="enter password">
+                </div>
+            </div>
+            <a class="popup-login blue-btn" href="company.html" >Login</a>
+            <div class="register-forget-container">
+                <a class="slide_open  registration" href="register-company.html">Registration</a>
+                <span>/</span>
+                <a class="forgot-password" href="forgot-password.html">Forgot password?</a>
+            </div>
+        </div>
+        <!--------------- end employee popup--------------->
+
+
+
+
+        <!---------------start footer--------------->
+        <footer>
+            <div class="full-footer">
+                <div class="left-footer">
+                    <h2>More About Company</h2>
+                    <p>
+                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                    </p>
+                </div>
+                <div class="middle-footer">
+
+                    <h2>Keep Contacted</h2>
+                    <ul class="social-links">
+                        <li><a href="#"><i class="ion-social-facebook"></i>Like us on Faceboock </a></li>
+                        <li><a href="#"><i class="ion-social-twitter"></i>Follow us on Twitter</a></li>
+                        <li><a href="#"><i class="ion-social-googleplus"></i>Add us on Google plus</a></li>
+                        <li><a href="#"><i class="ion-social-instagram"></i>Follow us on Instagram </a></li>
+                        <li><a href="#"><i class="ion-social-youtube"></i>Follow us on Instagram </a></li>
+
+                    </ul>
+                </div>
+                <div class="right-footer">
+                    <h2>Contacted Information</h2>
+                    <ul class="company-contact">
+                        <li><i class="ion-home"></i>The company name</li>
+                        <li><i class="ion-iphone"></i>+99555555555</li>
+                        <li><a href="contact-us.html"><i class="ion-email"></i>contact@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!---------------end footer--------------->
+
+    </body>
+
+
+</html>

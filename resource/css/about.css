@@ -1,0 +1,168 @@
+
+/*---------first part-----------*/
+.first-part{
+    display: block;
+}
+
+.first-part div{
+    width: 50%;
+    display: inline-block;
+    float: left;
+    height: 350px;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+
+.first-part-left{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.17), rgba(0, 0, 0, 0.49)),url(../img/SlideImg/example/03.jpg);
+    background-position: center;/*gaacentrebs fotos*/
+    background-size: cover;/*caverze zustad gantavsdeba*/
+    background-attachment: fixed;
+}
+p{
+    margin:3px 8px;
+}
+
+/*---------end first part-----------*/
+
+
+
+
+/*---------second part------------*/
+.second-part{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.second-part-top ul li{
+    display: inline-block;
+    margin:13px;
+    vertical-align: top;
+    width: 15%;
+    padding: 20px 0;
+}
+
+.second-part h2{
+    display: block;
+}
+
+.second-part-top ul li img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display:block;
+    margin: 0 auto;
+}
+
+
+/*---------end second part------------*/
+
+
+/*----------third part------------*/
+.third{
+    text-align: center;
+}
+
+figure img{
+    width: 200px;
+    display: inline-block;
+    margin: 40px;
+
+}
+
+/*----------End third part------------*/
+
+
+
+
+
+
+@media only screen and (max-width: 2560px){
+
+}
+
+@media only screen and (max-width: 1440px){
+
+}
+
+@media only screen and (max-width: 1024px){    
+
+
+    .second-part-top ul li{
+        width: 20%;
+    }
+
+    figure img{
+        width: 170px;
+    }
+
+    .second-part-top ul li{
+        display: inline-block;
+        margin:25px;
+        vertical-align: top;
+        width: 30%;
+        padding: 10px 0;
+    }
+
+}
+
+@media only screen and (max-width: 768px)
+{
+    .wrapper{
+        width: 100%;
+
+    }
+    figure img{
+        width: 150px;
+        margin: 10px;
+    }
+
+
+}
+
+@media only screen and (max-width: 670px){
+
+}
+
+@media only screen and (max-width: 480px)
+{
+    .wrapper{
+        width: 100% !important;
+        margin-top: 50px;
+    }
+    p{
+        padding: 0;
+    }
+
+    .first-part div{
+        width: 100%;
+        display: block;
+    }
+
+    .second-part-top ul li p{
+        vertical-align: top;
+        width: 100%;
+    }
+
+    .second-part-top ul li img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        display:block;
+        margin: 0 auto;
+    }
+
+}
+
+@media only screen and (max-width: 375px)
+{
+
+}
+
+@media only screen and (max-width: 320px){
+
+}
+

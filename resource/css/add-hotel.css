@@ -1,0 +1,423 @@
+
+/*===============general information===============*/
+/*registration main container*/
+.registration-hotel-form,
+.hotel-information{
+    width: 60%;
+    height: auto;
+    margin: 50px auto;
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+    background: rgb(247, 247, 247);
+    border: 1px solid rgba(111, 106, 106, 0.47);
+}
+
+.registration-hotel-form label, input, select,
+.hotel-information label, input, select{
+    height: 30px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.registration-hotel-form label, 
+.hotel-information label{
+    height: 40px;
+}
+.registration-hotel-form label, input, select, textarea,
+.hotel-information label, input, select, textarea{
+    border-radius: 10px;
+    margin: 7px auto;
+    padding: 0 10px;
+    width: 90%;
+    vertical-align: bottom;
+
+}
+.registration-hotel-form label,
+.hotel-information label {
+    line-height: 19px;
+    vertical-align: middle;
+    margin-bottom: 5px;
+}
+
+.registration-hotel-form input{
+    font-size: 12px;
+}
+
+.hotel-information textarea{
+    width: 96%;
+}
+.label-check label{
+    width: 80%;
+    display: inline-block;
+    float: left;
+    padding-left: 20px;
+}
+
+input[type=checkbox] {
+    float: left;;
+    margin: 0 5px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+
+/*===============end general information===============*/
+
+
+/*===============header style of registration container ===============*/
+
+/*general header of registration form*/
+.registration-hotel-form-header{
+    display: block;
+    width: 100%;
+    height: 40px;
+    vertical-align: top;
+    text-align: center;
+    color: #fff;
+    line-height: 40px;
+    background: linear-gradient(rgb(31, 214, 214), rgb(12, 70, 113));
+    letter-spacing: 1px; 
+}
+
+/* first child (first icon style) of registration header*/
+.registration-hotel-form-header div:first-child{
+    margin-left: 20px;
+    float: left;
+}
+/*text of registration form header*/
+.registration-hotel-form-header span{
+    margin-right: 10px;
+}
+
+/*===============end header style of registration container ===============*/
+
+
+/*===============registration details part in registration container ===============*/
+
+
+/*----------left (div) side of registration details part----------*/
+
+/*main div of left (div) side of registration details part*/
+.hotel-details-left-side
+{
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+.left-side-title{
+    padding: 40px 0;
+    background: rgba(186, 181, 181, 0.21);
+}
+
+/*section upload photo  in main div of left (div) side of registration details part*/
+.upload-photo-section{
+    width: 80%;
+    margin: 30px auto;
+}
+/*upload photo bodrer*/
+.personal-info-uploadPhoto{
+    border-radius: 20px;
+    display: block;
+    margin: 15px auto;
+    border: dashed 1px rgba(170, 163, 163, 0.86);
+    width: 200px;
+    height: 200px;
+}
+/*icon in upload photo border*/
+.personal-info-uploadPhoto i{
+    display:block;
+    font-size: 60px;
+    color: #aaa2a2;
+    margin-top: 20px;
+} 
+.upload-btn-section label
+{
+    line-height: 30px;
+}
+
+/**********end left (div) side of registration details part**********/
+
+
+
+/**********right (div) side of registration details part**********/
+/*main right div*/
+.hotel-details-right-side{
+    width: 70%;
+    display: inline-block;
+    vertical-align: top; 
+    text-align: center;
+    border-left: 1px solid #e3dcdc;
+    float: right;
+    padding: 10px 0;
+}
+
+.hotel-details-right-side  label{
+    text-align: left;
+}
+
+.hotel-details-right-side span{
+    color: red;
+    font-size: 25px;
+}
+.each-line{
+    display: block;
+}
+
+.each-line div, 
+.gallery-photos{
+    display: inline-block;
+    vertical-align: top;
+}
+.each-line div{
+    width: 49%;
+}
+
+.each-line textarea{
+    height: 100px;  
+}
+.imageThumb {
+    max-height: 75px;
+    border: 2px solid;
+    padding: 1px;
+    cursor: pointer;
+}
+/*gallery photo style in gallery div*/
+.each-line .gallery-photos{
+    width:150px;
+    height: 100px;
+    background: rgba(204, 199, 199, 0.44);
+    margin: 10px;
+    border-radius: 15px;
+    line-height: 100px;
+    cursor: pointer;
+    font-size:40px;
+    color: grey;
+    display: inline-block;
+    vertical-align: top;
+}
+.gallery-photos i{
+    font-size: 30px;
+    line-height: 100px;
+}
+
+/**********end right (div) side of registration details part**********/
+
+/*----------dinamycal information----------*/
+/*dinamycal class which will add after upload main photo*/
+.main-photo{
+    height:200px;
+    width: 200px;
+    border-radius:20px;
+}
+/*dinamycal class which will add after upload gallery photo*/
+/*main div where will add photos*/
+.main-div{
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+
+.gallery-img{
+    height:100px; 
+    border-top-right-radius:10px;
+    border-top-left-radius: 10px;
+
+}
+.gallery-img,
+.remove{
+    width: 150px;
+    display: block;
+}
+
+.remove{
+    height: 20px;
+    background: red;
+    color: #fff;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius: 10px;
+    line-height: 20px;
+    display: block;
+    border: 1px solid black;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+.remove:hover{
+    cursor: pointer;
+    background: #be2323;
+}
+
+/*small yelow btn spna color*/
+.small-yelow-btn span{
+    color: black;
+}
+
+
+/*-------------------------------------------------------------------------*/
+/**********end registration details part in registration container**********/
+/*-------------------------------------------------------------------------*/
+/*every div class name where should put appear div form*/
+.everything-about-hotel{
+    height: auto;
+    display: block;
+}
+
+.registration-hotel-form{
+    display: none;
+    margin-top:20px;;
+}
+
+.everything-about-hotel{
+    text-align: center;
+    height: auto;
+}
+.btn{
+    width: 20%;
+}
+
+
+
+
+
+/*-------------------------------------------------------------------------*/
+/**********responsive**********/
+/*-------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 2560px){
+
+}
+
+@media only screen and (max-width: 1440px){
+
+}
+
+@media only screen and (max-width: 1024px){    
+    /*upload photo bodrer*/
+    .personal-info-uploadPhoto,
+    .main-photo{
+        width: 150px;
+        height: 150px;
+    }
+    /*icon in upload photo border*/
+    .personal-info-uploadPhoto i{
+        font-size: 40px;
+    }
+
+    .label-check label{
+        width: 70%;
+    }
+
+}
+@media only screen and (max-width: 768px)
+{
+    .registration-hotel-form,
+    .hotel-information{
+        width: 80%;
+    }
+
+    .file > label {
+        height: 28px;
+    }
+}
+
+@media only screen and (max-width: 670px){
+
+}
+
+@media only screen and (max-width: 480px)
+{
+    .registration-hotel-form,
+    .hotel-information{
+        width: 90%;
+    }
+
+
+    .hotel-details-left-side,
+    .hotel-details-right-side
+    {
+        width: 100%;
+        display: block;
+        overflow: hidden;
+    }
+
+    .hotel-details-right-side{
+        border-left: 0;
+        border-top:1px solid #e3dcdc;
+    }
+
+
+    /*upload photo bodrer*/
+    .personal-info-uploadPhoto,
+    .main-photo{
+        width: 200px;
+        height: 150px;
+    }
+
+    .file > label {
+        width: 50%;
+        margin-bottom: 0;
+    }
+    .small-yelow-btn{
+        padding: 0;
+        width: 90px !important; 
+    }
+    .small-yelow-btn span{
+        padding: 0;
+
+    }
+
+    .btn{
+        width: 150px;
+    }
+}
+
+@media only screen and (max-width: 375px)
+{
+    .registration-hotel-form,
+    .hotel-information{
+        width: 93%;
+    }
+
+}
+
+@media only screen and (max-width: 320px){
+
+    /*upload photo bodrer*/
+    .personal-info-uploadPhoto,
+    .main-photo{
+        width: 150px;
+        height: 150px;
+    }
+    .each-line .gallery-photos{
+        width:130px;
+        margin: 5px;
+    }
+
+
+    .gallery-img{
+        height:100px; 
+        border-top-right-radius:10px;
+        border-top-left-radius: 10px;
+
+    }
+    .gallery-img,
+    .remove{
+        width: 125px;
+        display: block;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+

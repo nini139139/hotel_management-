@@ -1,0 +1,1510 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-vidth, initial-scale=1.0"> 
+        <title>HOTEL</title>
+
+        <!---------------vendors css--------------->
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+        <!---------------end vendors scc--------------->
+
+        <!---------------bootstrap vendors css--------------->
+        <link href="bootstrapVendors/css/bootstrap.css" rel="stylesheet">
+        <!---------------end bootstrap vendors css--------------->
+
+        <!---------------slider css--------------->
+        <link href="resource/css/sliderCss/skitter.css" type="text/css" media="all" rel="stylesheet" />
+        <link href="resource/css/sliderCss/slider.css" type="text/css" media="all" rel="stylesheet" />
+        <!---------------end slider css--------------->
+
+        <!---------------jquery/ajax/waypoint scripts--------------->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="vendors/js/jquery.waypoints.min.js"></script>
+        <!---------------end jquery/ajax--------------->
+
+        <!---------------resource js files--------------->
+        <script type="text/javascript" language="javascript" src="resource/js/script.js" ></script>
+        <script type="text/javascript" language="javascript" src="resource/js/add-hotel-js/add-hotel.js" ></script>
+        <!---------------end resource js files--------------->
+
+        <!---------------resource css files--------------->
+        <link href="resource/css/style.css" rel="stylesheet">
+        <link href="resource/css/add-hotel.css" rel="stylesheet">
+        <!---------------end resource css files--------------->
+
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+    </head>
+    <body>
+
+
+        <!---------------start nav-bar--------------->
+        <nav>
+
+            <div class="topnav">
+                <!--mobile nav icon-->
+                <div class="logo">
+                    <a href="#main">HOTELS</a>
+                    <a class="mobile-nav-icon js--nav--icon"><i class="ion-navicon-round"></i></a>
+                </div>
+                <div class="navContents js--main-nav">
+                    <a href="index.html">Home</a>
+                    <a href="about-us.html">About Us</a>
+                    <a href="add-hotel.html">Add Hotel</a>
+                    <a href="contact-us.html">Contact Us</a>
+                </div>
+                <div class="sign js--main-nav">
+                    <a class="login" href="sign-up.html">Sign up
+                        <i class="glyphicon glyphicon-log-in"></i>
+                    </a>
+                    <a class="register" href="#">log out
+                        <i class="glyphicon glyphicon-log-out"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>    
+        <!---------------end nav-bar--------------->
+        <!---------------start wrapper--------------->
+        <div class="wrapper" >
+            <h1>Add Hotel</h1>
+            <!---------------start hotel information container--------------->
+            <div class="hotel-information">  <!--start hotel info form container-->
+                <div class="registration-hotel-form-header"><!--registration form header start-->
+                    <div class="header-icon">
+                        <i class="ion-home"></i>
+                    </div>
+                    <div>
+                        <span>Hotel Info </span>
+                        <i class="ion-edit"></i>
+                    </div>
+                </div><!--end registration form header-->
+                <div class="registration-hotel-details">
+                    <div class="hotel-details-left-side"><!--forms left side start-->
+                        <div class="upload-photo-section">
+                            <div class="personal-info-uploadPhoto profile-photo"  id="profile-photo" name="profile-photo">
+                                <div id="profile-photo-hidden">
+                                    <i class="ion-ios-cloud-upload-outline "></i>
+                                    <span>
+                                        Please upload
+                                        <br>main photo
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="file upload-btn-section">
+                                <label for="file-input">Upload photo</label>
+                                <input type="file" id="file-input">
+                            </div>
+                        </div>
+                    </div><!--forms left side end-->
+                    <div class="hotel-details-right-side"><!--forms right side start-->
+                        <div class="each-line">
+                            <div>
+                                <label>Hotel Name:<span>*</span></label>
+                                <input placeholder="Hotel Name">
+                            </div>
+                            <div>
+                                <label>Phone Number :<span>*</span></label>
+                                <input  type="number" placeholder="Phone Number">
+                            </div>
+                            <div>
+                                <label>Price from:<span>*</span></label>
+                                <input  type="number" placeholder="Price ">
+                            </div>
+                            <div>
+                                <label>Till Price:<span>*</span></label>
+                                <input placeholder=" Price">
+                            </div>
+                            <div>
+                                <label>Address <br>Street:<span>*</span></label>
+                                <input placeholder="street">
+                            </div>
+                            <div>
+                                <label>Number of Hotel:<span>*</span></label>
+                                <input type="text" placeholder="Number  of House">
+                            </div>
+                            <div>
+                                <label>
+                                    City:<span>*</span>
+                                </label>
+                                <select class="city"  name="city">
+                                    <option value="Tbilisi">Tbilisi</option>
+                                    <option value="Moscow">Moscow</option>
+                                    <option value="Batumi">Batumi</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label>
+                                    Country:<span>*</span>
+                                </label>
+                                <select class="country"  name="country">
+                                    <option value="American">American</option>
+                                    <option value="Georgian">Georgian</option>
+                                    <option value="Russian">Russian</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="each-line">
+                            <label>
+                                Short Description:<span>*</span>
+                            </label>
+                            <textarea placeholder="please write short description"></textarea>
+                        </div>
+                        <div class="each-line">
+                            <a id="1" href="#hotel-gallery"> <!--Information about Company btn-->
+                                <div class="small-yelow-btn stage" >
+                                    <span>next</span>
+                                </div>
+                            </a><!--end information about Company btn-->
+                        </div>
+                    </div><!--forms right side end-->
+                </div>
+            </div>
+            <!---------------end hotel information container--------------->
+
+            <!---------------Start  main container--------------->
+            <div class="main-container">
+
+                <!---------------Start hotel gallery container--------------->
+                <div class="hotel-gallery put-container" id="hotel-gallery"> 
+                    <div class="registration-hotel-form 1">
+                        <div class="registration-hotel-form-header"><!--registration form header start-->
+                            <div class="header-icon">
+                                <i class="ion-images"></i>
+                            </div>
+                            <div>
+                                <span>Photos hotel gallery </span>
+                                <i class="ion-edit"></i>
+                            </div>
+                        </div><!--registration form header end-->
+                        <div class="registration-hotel-details gallery">
+                            <div class="hotel-details-left-side"><!--forms left side start-->
+                                <div class="left-side-title">
+                                    <div>
+                                        <span>
+                                            Please upload photo for gallery.You can upload 6 images.
+                                        </span>
+                                    </div>
+                                    <div class="file upload-btn-section">
+                                        <input type="file"  id="files" multiple="multiple" class="files" name="files[]">
+                                        <label for="files" ><i class="ion-plus"></i>Upload photos</label>
+                                    </div>
+                                </div>
+                            </div><!--end forms left side-->
+                            <div class="hotel-details-right-side"><!--forms right side start-->
+                                <div class="each-line gallery-section">
+                                    <figure class="gallery-photos">
+                                        <i class="ion-plus"></i>
+                                    </figure>
+                                    <figure class="gallery-photos">
+                                        <i class="ion-plus"></i>
+                                    </figure>
+                                    <figure class="gallery-photos">
+                                        <i class="ion-plus"></i>
+                                    </figure>
+                                    <figure class="gallery-photos">
+                                        <i class="ion-plus"></i>
+                                    </figure>
+                                    <figure class="gallery-photos">
+                                        <i class="ion-plus"></i>
+                                    </figure>
+                                    <figure class="gallery-photos">
+                                        <i class="ion-plus"></i>
+                                    </figure>
+                                </div>
+                                <div class="each-line">
+                                    <a id="2" href="#company-description"> <!--Information about Company btn-->
+                                        <div class="small-yelow-btn stage" >
+                                            <span>next</span>
+                                        </div>
+                                    </a><!--end information about Company btn-->
+                                </div>
+                            </div><!--forms right side end-->
+                        </div>
+                    </div><!---end gallery container-->
+                </div>
+                <!---------------end hotel gallery container--------------->
+
+
+                <!---------------Start company  description container--------------->
+                <div class="company-description put-container" id="company-description">
+                    <div class="registration-hotel-form 2"> <!---start company  description container-->
+                        <div class="registration-hotel-form-header"><!--registration form header start-->
+                            <div class="header-icon">
+                                <i class="ion-briefcase"></i>
+                            </div>
+                            <div>
+                                <span>Company Description </span>
+                                <i class="ion-edit"></i>
+                            </div>
+                        </div><!--registration form header end-->
+                        <div class="registration-hotel-details">
+                            <div class="hotel-details-left-side"><!--forms left side start-->
+                                <div class="left-side-title">
+                                    <span>Details description of Company</span>
+                                </div>
+                            </div><!--forms left side end-->
+                            <div class="hotel-details-right-side"><!--forms right side start-->
+                                <div class="each-line">
+                                    <div>
+                                        <label>
+                                            Business type:<span>*</span>
+                                        </label>
+                                        <select class="businesს-type"  name="busines-type">
+                                            <option value="">------</option>
+                                            <option value="company">Company</option>
+                                            <option value="ltd">Ltd</option>
+                                            <option value="physical-person">Physical Person</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label>Identification code of company :<span>*</span></label>
+                                        <input  type="number" placeholder="Identification Code ">
+                                    </div>
+                                    <div>
+                                        <label>Legal Name of Company:<span>*</span></label>
+                                        <input  type="text" placeholder="Name of Company ">
+                                    </div>
+                                    <div>
+                                        <label>Name and Lastname of director:<span>*</span></label>
+                                        <input placeholder="Name and Lastname of director">
+                                    </div>
+                                    <div>
+                                        <label>Mobile number of director:<span>*</span></label>
+                                        <input placeholder="Name and Lastname of director">
+                                    </div>
+                                    <div>
+                                        <label>Bank account number:<span>*</span></label>
+                                        <input type="text" placeholder="Bank account Number">
+                                    </div>
+                                    <div>
+                                        <label>
+                                            Email(for legal information):<span>*</span>
+                                        </label>
+                                        <input type="text" placeholder="Bank account Number">
+                                    </div>
+                                    <div>
+                                        <label>
+                                            The main administrator:<span>*</span>
+                                        </label>
+                                        <input type="text" placeholder="Nmae And Lastname">
+                                    </div>
+                                    <div>
+                                        <label>Mobile of Administrator:<span>*</span></label>
+                                        <input placeholder="Mobile number" type="number">
+                                    </div>
+                                    <div>
+                                        <label>Phone Number :<span>*</span></label>
+                                        <input  type="number" placeholder="Phone Number">
+                                    </div>
+                                    <div>
+                                        <label>
+                                            Plenipotentiary for signing a contract. Name and Lastname:<span>*</span>
+                                        </label>
+                                        <input  type="text" placeholder="SPlenipotentiary for signing a contract.Name and Lastname">
+                                    </div>
+                                    <div>
+                                        <label>
+                                            Are you VAT payer? If you are VAT payer - prices include VAT?<span>*</span>
+                                        </label>
+                                        <select class="businesს-type"  name="busines-type">
+                                            <option value="yes">Yes</option>
+                                            <option value="no">No</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="each-line">
+                                    <a id="3" href="#general-information"> <!--Information about Company btn-->
+                                        <div class="small-yelow-btn stage">
+                                            <span>next</span>
+                                        </div>
+                                    </a><!--end information about Company btn-->
+                                </div>
+                            </div><!--forms right side end-->
+                        </div>
+                    </div><!---end  company description container-->
+                </div>
+                <!---------------End company description container--------------->
+
+
+                <!---------------Start General information container--------------->
+                <div class="general-information put-container" id="general-information">
+                    <div class="registration-hotel-form 3"> <!---start general information container-->
+                        <div class="registration-hotel-form-header"><!--registration form header start-->
+                            <div class="header-icon">
+                                <i class="ion-load-b"></i>
+                            </div>
+                            <div>
+                                <span>General information </span>
+                                <i class="ion-edit"></i>
+                            </div>
+                        </div><!--registration form header end-->
+                        <div class="registration-hotel-details">
+                            <div class="hotel-details-left-side"><!--forms left side start-->
+                                <div class="left-side-title">
+                                    <span>Property general information about hotel</span>
+                                </div>
+                            </div><!--forms left side end-->
+                            <div class="hotel-details-right-side"><!--forms right side start-->
+                                <div class="each-line">
+                                    <div>
+                                        <label>
+                                            Hotel type:<span>*</span>
+                                        </label>
+                                        <select class="property-type"  name="property-type">
+                                            <option value="">------</option>
+                                            <option value="hotel">Hotel</option>
+                                            <option value="guesthouse">guesthouse</option>
+                                            <option value="apartment/flat"> apartment/flat</option>
+                                            <option value="cottage">Cottage</option>
+                                            <option value="villa">Villa</option>
+                                            <option value="hostel">hostel</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label>Please provide landline and mobile phone numbers of the hotel: :<span>*</span></label>
+                                        <input  type="number" placeholder="995 555 555  ">
+                                    </div>
+                                    <div>
+                                        <label>Website of the hotel:<span>*</span></label>
+                                        <input  type="text" placeholder="Website:">
+                                    </div>
+                                    <div>
+                                        <label>Facebook page of the hotel:<span>*</span></label>
+                                        <input placeholder="Facebook page">
+                                    </div>
+                                    <div>
+                                        <label>
+                                            Choose the assigned stars (from 0 to 5):<span>*</span>
+                                        </label>
+                                        <select class="property-type"  name="property-type">
+                                            <option value="">------</option>
+                                            <option value="">0</option>
+                                            <option value="">1 *</option>
+                                            <option value="">2 **</option>
+                                            <option value="">3 ***</option>
+                                            <option value="">4 ****</option>
+                                            <option value="">5 *****</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label>Reception email (where you will receive booking notifications)::<span>*</span></label>
+                                        <input type="text" placeholder="Email">
+                                    </div>
+                                    <div>
+                                        <label>
+                                            Check in time::<span>*</span>
+                                        </label>
+                                        <select>
+                                            <option value="">----</option>
+                                            <option value="8:00">08:00</option> 
+                                            <option value="8:00">08:00</option> 
+                                            <option value="9:00">09:00</option> 
+                                            <option value="10:00">10:00</option> 
+                                            <option value="11:00">11:00</option> 
+                                            <option value="12:00">12:00</option> 
+                                            <option value="13:00">13:00</option> 
+                                            <option value="14:00">14:00</option> 
+                                            <option value="15:00">15:00</option> 
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            Check out time::<span>*</span>
+                                        </label>
+                                        <select>
+                                            <option value="">----</option>
+                                            <option value="8:00">08:00</option> 
+                                            <option value="8:00">08:00</option> 
+                                            <option value="9:00">09:00</option> 
+                                            <option value="10:00">10:00</option> 
+                                            <option value="11:00">11:00</option> 
+                                            <option value="12:00">12:00</option> 
+                                            <option value="13:00">13:00</option> 
+                                            <option value="14:00">14:00</option> 
+                                            <option value="15:00">15:00</option> 
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="each-line">
+                                    <label>
+                                        Please check the work months / those months when the property is open for guests and is operating:<span>*</span>
+                                    </label>
+                                    <div class="label-check">
+                                        <label>
+                                            Jenuary  
+                                        </label>
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            February
+                                        </label>
+                                         <input type="checkbox">
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            March
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            April
+                                        </label>
+                                         <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            May
+                                        </label>
+                                         <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            June  
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            July
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            August
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            September
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            October
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            November
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            December 
+                                        </label>
+                                        <input type="checkbox">
+                                    </div>
+                                </div>
+                                <div class="each-line">
+                                    <label>
+                                        How many days prior to check-in it is possible to cancel booking? (without penalty):
+                                    </label>
+                                    <input type="number" >
+                                </div>
+                                <div class="each-line">
+                                    <a id="4" href="#transport-information"> <!--Information about Company btn-->
+                                        <div class="small-yelow-btn stage" >
+                                            <span>next</span>
+                                        </div>
+                                    </a><!--end information about Company btn-->
+                                </div>
+                            </div><!--forms right side end-->
+                        </div>
+                    </div><!---end  general information  container-->
+                </div>
+                <!---------------End General information container--------------->
+
+
+                <!---------------Start transport information container--------------->
+                <div class="transport-information put-container" id="transport-information">
+                    <div class="registration-hotel-form transport 4"> <!---start  transport container-->
+                        <div class="registration-hotel-form-header"><!--registration form header start-->
+                            <div class="header-icon">
+                                <i class="ion-android-subway"></i>
+                            </div>
+                            <div>
+                                <span>Transport</span>
+                                <i class="ion-edit"></i>
+                            </div>
+                        </div><!--registration form header end-->
+                        <div class="registration-hotel-details">
+                            <div class="hotel-details-left-side"><!--forms left side start-->
+                                <div class="left-side-title">
+                                    <span>Information about Transport</span>
+                                </div>
+                            </div><!--forms left side end-->
+                            <div class="hotel-details-right-side"><!--forms right side start-->
+                                <div class="each-line">
+                                    <div>
+                                        <label>
+                                            Which airport is closest to the Hotel?:<span>*</span>
+                                        </label>
+                                        <input type="text" placeholder="Airport name">
+                                    </div>
+                                    <div>
+                                        <label>
+                                            How many minutes drive away is it?:<span>*</span>
+                                        </label>
+                                        <input type="text" placeholder="Time">
+                                    </div>
+                                    <div>
+                                        <label>
+                                            Which metro station is closest to the property?:<span>*</span>
+                                        </label>
+                                        <input type="text" placeholder="Metro name">
+                                    </div>
+                                    <div>
+                                        <label>
+                                            How many minutes walk is to the property?:<span>*</span>
+                                        </label>
+                                        <input type="text" placeholder="Time">
+                                    </div>
+                                    <div>
+                                        <label>
+                                            How many minuted drive is from autostation to the property?:<span>*</span>
+                                        </label>
+                                        <input type="text" placeholder="Time">
+                                    </div>
+                                    <div>
+                                        <label>
+                                            How many minuted drive is from railway station to the property:<span>*</span>
+                                        </label>
+                                        <input type="text" placeholder="Time">
+                                    </div>
+                                </div>
+                                <div class="each-line">
+                                    <label>
+                                        What transport can be used to come?:<span>*</span>
+                                    </label>
+                                    <div class="label-check">
+                                        <label>
+                                            Bus  
+                                        </label>
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Microbus 
+                                        </label>
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Taxi 
+                                        </label>
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Car 
+                                        </label>
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Metro
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Only oofroad vehicle
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                </div>
+                                <div class="each-line">
+                                    <div>
+                                        <label>
+                                            How many minuted walk is from the beach to the property?:<span>*</span>
+                                        </label>
+                                        <input type="text" placeholder="Time">
+                                    </div>
+                                    <div>
+                                        <label>
+                                            How many minuted walk is from the skiing cableway to the property?:<span>*</span>
+                                        </label>
+                                        <input type="text" placeholder="Time">
+                                    </div>
+                                </div>    
+                                <div class="each-line">
+                                    <a id="5" href="#paying-information"> <!--Information about Company btn-->
+                                        <div class="small-yelow-btn stage" >
+                                            <span>next</span>
+                                        </div>
+                                    </a><!--end information about Company btn-->
+                                </div>
+                            </div><!--forms right side end-->
+                        </div>
+                    </div><!---end  transport  container-->
+                </div>
+                <!---------------End transport information container--------------->
+
+
+                <!---------------Start paying information container--------------->
+                <div class="paying-information put-container" id="paying-information">
+                    <div class="registration-hotel-form paying 5" > <!---start paying container-->
+                        <div class="registration-hotel-form-header"><!--registration form header start-->
+                            <div class="header-icon">
+                                <i class="ion-social-usd"></i>
+                            </div>
+                            <div>
+                                <span>Paying</span>
+                                <i class="ion-edit"></i>
+                            </div>
+                        </div><!--registration form header end-->
+                        <div class="registration-hotel-details">
+                            <div class="hotel-details-left-side"><!--forms left side start-->
+                                <div class="left-side-title">
+                                    <span>Inormation about paying</span>
+                                </div>
+                            </div><!--forms left side end-->
+                            <div class="hotel-details-right-side"><!--forms right side start-->
+                                <div class="each-line">
+                                    <div>
+                                        <label>
+                                            Price includes:<span>*</span>
+                                        </label>
+                                        <select>
+                                            <option value="">----</option>
+                                            <option value="doesn't-include-meals">Doesn't include meals</option> 
+                                            <option value="breackfast">Breakfast included</option> 
+                                            <option value="two-meal">2 meals a day</option> 
+                                            <option value="tree-meals">Tree meals a day</option> 
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            At least for how many nights booking must be made?:<span>*</span>
+                                        </label>
+                                        <input type="number" placeholder="number of days">
+                                    </div>
+                                </div>
+                                <div class="each-line">
+                                    <label>
+                                        Payment methods in the property * 
+                                        Check according: only cash payment accepted of plastic cards also accepted. :<span>*</span>
+                                    </label>
+                                    <div class="label-check">
+                                        <label>
+                                            Cash payment accepted  
+                                        </label>
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Master Card
+                                        </label>
+                                         <input type="checkbox">
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Visa Card 
+                                        </label>
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            JCB Card
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Maestro Card
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            American Express 
+                                        </label>
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Dinner Club International
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Discover Card
+                                        </label>
+                                         <input type="checkbox"> 
+                                    </div>
+                                </div>
+                                <div class="each-line">
+                                    <label>
+                                        Days before arrival... Is it possible to check-in today? Or from tomorrow ? In case of booking the guest can check in: <span>*</span>
+                                    </label>
+                                    <select>
+                                        <option>-----</option>
+                                        <option value="same-day">the same day</option>
+                                        <option value="second-day">the second day</option>
+                                        <option value="third-day">the third day</option>
+                                        <option value="fourth-day">the fourth day</option>
+                                        <option value="fifth-day">the fifth day</option>
+                                    </select>
+                                </div>
+                                <div class="each-line">
+                                    <label>
+                                        Do your prices depend on seasons?:<span>*</span>
+                                    </label>
+                                    <select>
+                                        <option value="yes">Yes</option>
+                                        <option value="no">No</option>
+                                    </select>
+
+                                </div>
+                                <div class="each-line">
+                                    <label>
+                                        Children untill what age can be placed together with a parent, on the same bed for free of charge?:<span>*</span>
+                                    </label>
+                                    <select>
+                                        <option value="7">----</option>
+                                        <option value="0">0 max</option>
+                                        <option value="1">1 max</option>
+                                        <option value="2">2 max</option>
+                                        <option value="3">3 max</option>
+                                        <option value="4">4 max</option>
+                                        <option value="5">5 max</option>
+                                        <option value="6">6 max</option>
+                                        <option value="7">7 max</option>
+                                        <option value="8">8 max</option>
+                                        <option value="9">9 max</option>
+                                        <option value="10">10 max</option>
+                                    </select>
+                                </div>
+                                <div class="each-line">
+                                    <a id="6" href="#hotel-features-information"> <!--Information about Company btn-->
+                                        <div class="small-yelow-btn stage" >
+                                            <span>next</span>
+                                        </div>
+                                    </a><!--end information about Company btn-->
+                                </div>
+                            </div><!--forms right side end-->
+                        </div>
+                    </div><!---end  paying  container-->
+                </div>
+                <!---------------End paying information container--------------->
+
+
+                <!---------------Start hotel features information container--------------->
+                <div class="hotel-features-information put-container" id="#hotel-features-information">
+                    <div class="registration-hotel-form hotel-features 6"> <!---start hotel features  container-->
+                        <div class="registration-hotel-form-header"><!--registration form header start-->
+                            <div class="header-icon">
+                                <i class="ion-gear-b"></i>
+                            </div>
+                            <div>
+                                <span>The Hotel features </span>
+                                <i class="ion-edit"></i>
+                            </div>
+                        </div><!--registration form header end-->
+                        <div class="registration-hotel-details">
+                            <div class="hotel-details-left-side"><!--forms left side start-->
+                                <div class="left-side-title">
+                                    <span>The Hotel features</span>
+                                </div>
+                            </div><!--forms left side end-->
+                            <div class="hotel-details-right-side"><!--forms right side start-->
+                                <div class="each-line">
+                                    <div class="label-check">
+                                        <label>
+                                            Family Friendly
+                                        </label>
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Waiter 
+                                        </label>
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Three meals a day
+                                        </label>
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            No smoking
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            smoking
+                                        </label>
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            First medical aid
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Bureau de change
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Elevator
+                                        </label>
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Concierge
+                                        </label>
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Disabled access
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Disabled WC
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Disabled WC
+                                        </label>
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Bar
+                                        </label>
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Restaurant
+                                        </label> 
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Private Garden
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Broadwalk
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Play area
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Master of ceremonies
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Tours 
+                                        </label>
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Taxi service 
+                                        </label>
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Car rental
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Bicycle rental
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Scooter Rental
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            24hr service
+                                        </label>
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Fitness Rental
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Hairdress
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Solarium
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Massage
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Biliards
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Tennis court
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Cycle path
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Quiet/Rural
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Owner managed
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Security service
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Pets are not allowed
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Pets are allowed
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Parking
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            paid Parking:
+                                        </label>
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Laundry, Washing mac
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Cleaning Services
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Winter Sports
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Beach
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Winter Sports
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Central Heating
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Gas Heater
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Electric Heater
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                </div>
+                                <div class="each-line">
+                                    <a id="7" href="#add-room-section"> <!--Information about Company btn-->
+                                        <div class="small-yelow-btn stage" >
+                                            <span>next</span>
+                                        </div>
+                                    </a><!--end information about Company btn-->
+                                </div>
+
+                            </div><!--forms right side end-->
+
+                        </div>
+                    </div><!---end  features form container-->
+                </div>
+                <!---------------End hotel features information container--------------->
+
+
+                <!---------------Start add room container--------------->
+                <div class="add-room-section put-container" id="add-room-section">
+                    <div class="registration-hotel-form add-room 7"> <!---start add room  container-->
+                        <div class="registration-hotel-form-header"><!--registration form header start-->
+                            <div class="header-icon">
+                                <i class="ion-home"></i>
+                            </div>
+                            <div>
+                                <span>Add Room</span>
+                                <i class="ion-edit"></i>
+                            </div>
+                        </div><!--registration form header end-->
+                        <div class="registration-hotel-details">
+                            <div class="hotel-details-left-side"><!--forms left side start-->
+                                <div class="left-side-title">
+                                    <span>Add Room section</span>
+                                </div>
+                            </div><!--forms left side end-->
+                            <div class="hotel-details-right-side"><!--forms right side start-->
+                                <div class="each-line">
+                                    <div>
+                                        <label>
+                                            Room type name:<span>*</span>
+                                        </label>
+                                        <input type="text" placeholder="e.g Double, Twin">
+                                    </div>
+                                    <div>
+                                        <label>
+                                            The total number of rooms this type in the property:<span>*</span>
+                                        </label>
+                                        <input type="number" placeholder="number of rooms">
+                                    </div>
+                                    <div>
+                                        <label>
+                                            Please specify room numbers if you have them for this type of rooms:<span>*</span>
+                                        </label>
+                                        <input type="text" placeholder="numbers">
+                                    </div>
+                                    <div>
+                                        <label>The total area of this room is square meters:<span>*</span></label>
+                                        <input type="text" placeholder="Squre meters">
+                                    </div>
+                                    <div>
+                                        <label>
+                                            How many bedrooms are in this type of room?:<span>*</span>
+                                        </label>
+                                        <input type="text" placeholder="numbers">
+                                    </div>
+                                    <div>
+                                        <label>How many bathrooms are in this type of room?:<span>*</span></label>
+                                        <input type="number" placeholder="number">
+                                    </div>
+                                    <div>
+                                        <label>
+                                            How many kitchens are in this type of room?:<span>*</span>
+                                        </label>
+                                        <input type="text" placeholder="numbers">
+                                    </div>
+                                    <div>
+                                        <label>How many guestrooms are in this type of room?:<span>*</span></label>
+                                        <input type="number" placeholder="number">
+                                    </div>
+                                    <div>
+                                        <label>
+                                            How many balconies are in this type of room?:<span>*</span>
+                                        </label>
+                                        <input type="text" placeholder="numbers">
+                                    </div>
+                                    <div>
+                                        <label>How many single beds are in this type of room?:<span>*</span></label>
+                                        <input type="number" placeholder="number">
+                                    </div>
+                                    <div>
+                                        <label>
+                                            The maximum number of persons that can be placed in this room, not including additional beds:<span>*</span>
+                                        </label>
+                                        <input type="text" placeholder="numbers">
+                                    </div>
+                                    <div>
+                                        <label>On which floor?:<span>*</span></label>
+                                        <input type="number" placeholder="Floor">
+                                    </div>
+                                </div>
+                                <div class="each-line">
+                                    <a id="8" href="#room-gallery-section"> <!--Information about Company btn-->
+                                        <div class="small-yelow-btn stage" >
+                                            <span>next</span>
+                                        </div>
+                                    </a><!--end information about Company btn-->
+                                </div>
+                            </div><!--forms right side end-->
+
+                        </div>
+                    </div><!---end  registration form container-->
+                </div>
+                <!---------------End add room container--------------->
+
+
+                <!---------------Start room gallery container--------------->
+                <div class="room-gallery-section put-container" id="room-gallery-section">
+                    <div class="registration-hotel-form room-gallery 8"> <!---start room gallery  container-->
+                        <div class="registration-hotel-form-header"><!--registration form header start-->
+                            <div class="header-icon">
+                                <i class="ion-images"></i>
+                            </div>
+                            <div>
+                                <span>Photos  gallery </span>
+                                <i class="ion-edit"></i>
+                            </div>
+                        </div><!--registration form header end-->
+                        <div class="registration-hotel-details gallery">
+                            <div class="hotel-details-left-side"><!--forms left side start-->
+                                <div class="left-side-title">
+                                    <div>
+                                        <span >Please upload photo for gallery.
+                                            You can upload 6 images.
+                                        </span>
+                                    </div>
+                                    <div class="file upload-btn-section">
+                                        <input type="file"  id="files-room" class="files" multiple="multiple" name="files[]" >
+                                        <label for="files-room" ><i class="ion-plus"></i>Upload photos</label>
+                                    </div>
+                                </div>
+                            </div><!--forms left side end-->
+                            <div class="hotel-details-right-side"><!--forms right side start-->
+                                <div class="each-line gallery-section">
+                                    <figure class="gallery-photos"><i class="ion-plus"></i></figure>
+                                    <figure class="gallery-photos"><i class="ion-plus"></i></figure>
+                                    <figure class="gallery-photos"><i class="ion-plus"></i></figure>
+                                    <figure class="gallery-photos"><i class="ion-plus"></i></figure>
+                                    <figure class="gallery-photos"><i class="ion-plus"></i></figure>
+                                    <figure class="gallery-photos"><i class="ion-plus"></i></figure>
+                                </div>
+                                <div class="each-line">
+                                    <a id="9" href="#room-features-information"> <!--Information about Company btn-->
+                                        <div class="small-yelow-btn stage" >
+                                            <span>next</span>
+                                        </div>
+                                    </a><!--end information about Company btn-->
+                                </div>
+                            </div><!--forms right side end-->
+                        </div>
+                    </div><!---end  room gallery container-->
+                </div>
+                <!---------------End add room container--------------->
+
+
+                <!---------------Start room features container--------------->
+                <div class="room-features-information put-container" id="room-features-information">
+                    <div class="registration-hotel-form room-features 9"> <!---start rooms features container-->
+                        <div class="registration-hotel-form-header"><!--registration form header start-->
+                            <div class="header-icon">
+                                <i class="ion-gear-b"></i>
+                            </div>
+                            <div>
+                                <span>The Room  features</span>
+                                <i class="ion-edit"></i>
+                            </div>
+                        </div><!--registration form header end-->
+                        <div class="registration-hotel-details">
+                            <div class="hotel-details-left-side"><!--forms left side start-->
+                                <div class="left-side-title">
+                                    <span>The current room features</span>
+                                </div>
+                            </div><!--forms left side end-->
+
+                            <div class="hotel-details-right-side"><!--forms right side start-->
+                                <div class="each-line">
+                                    <div class="label-check">
+                                        <label>
+                                            River view  
+                                        </label>
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Landmark viewr
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Garden view
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Sea view
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            City view
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Lake view
+                                        </label>
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Pool view
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Mountain view
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Terrace
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Fireplace
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Air Conditioner
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Heating system 
+                                        </label>
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Access to the internet, Wi-fi
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Lan internet
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Lan internet
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Phone in the room
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            TV 
+                                        </label>
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            DVD
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Beverages
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Refrigerator
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Minibar
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Kitchen Accessories
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Microwave
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Safe in the room
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Sofa
+                                        </label>
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Working Table
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                    <div class="label-check">
+                                        <label>
+                                            Iron
+                                        </label>
+                                        <input type="checkbox"> 
+                                    </div>
+                                </div>
+
+                            </div><!--forms right side end-->
+                        </div>
+                    </div><!---end  registration form container-->
+                </div>
+                <!---------------end room features container--------------->
+
+
+                <div>
+                    <a class="btn blue-btn" href="hotel-details.html"> <!--Information about Company btn-->
+
+                        <span>send</span>
+
+                    </a><!--end information about Company btn-->
+                </div>
+            </div>
+            <!---------------End main container--------------->
+
+
+
+        </div>
+        <!---------------end wrapper--------------->
+
+        <!---------------start footer--------------->
+        <footer>
+            <div class="full-footer">
+                <div class="left-footer">
+
+                    <h2>More About Company</h2>
+                    <p>
+                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                    </p>
+                </div>
+
+                <div class="middle-footer">
+
+                    <h2>Keep Contacted</h2>
+                    <ul class="social-links">
+                        <li><a href="#"><i class="ion-social-facebook"></i>Like us on Faceboock </a></li>
+                        <li><a href="#"><i class="ion-social-twitter"></i>Follow us on Twitter</a></li>
+                        <li><a href="#"><i class="ion-social-googleplus"></i>Add us on Google plus</a></li>
+                        <li><a href="#"><i class="ion-social-instagram"></i>Follow us on Instagram </a></li>
+                        <li><a href="#"><i class="ion-social-youtube"></i>Follow us on Instagram </a></li>
+
+                    </ul>
+                </div>
+                <div class="right-footer">
+                    <h2>Contacted Information</h2>
+                    <ul class="company-contact">
+                        <li><i class="ion-home"></i>The company name</li>
+                        <li><i class="ion-iphone"></i>+99555555555</li>
+                        <li><a href="contact-us.html"><i class="ion-email"></i>contact@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!---------------end footer--------------->
+
+    </body>
+
+
+</html>

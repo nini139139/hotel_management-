@@ -1,0 +1,743 @@
+/*===============start general information===============*/
+@import 'https://fonts.googleapis.com/css?family=Alegreya+Sans:300,300i,400,400i,500,500i,700,700i,800,800i';
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    box-sizing:  border-box;
+}
+*:focus{
+    outline: none  !important;
+}
+body {
+    margin:0;
+    font-family: "Alegreya Sans", Arial, Tahoma;
+    color: #333;
+    font-size: 20px;
+    overflow-x: hidden; 
+}
+input, select, textarea{
+    border: 1px solid rgba(56, 55, 55, 0.42);
+}
+textarea{
+     resize: none;
+}
+h1,h2,h3,h4{
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    margin-top: 30px;
+}
+
+h1:after,
+h3:after{
+    content: "";
+    width: 120px;
+    background-color: #fdd835;;
+    height: 2px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+h3{
+    text-transform: uppercase
+}
+span{
+    font-weight: 300;
+}
+p{
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+input,textarea,label, p, select{
+    font-size: 15px;
+    padding: 2px 5px;
+    margin: 3px 0;
+    border-radius: 5px;
+    font-weight: 300;
+}
+label{
+    font-weight: 500;
+}
+input[type=checkbox] {
+    width: 15px;
+    vertical-align: bottom;
+}
+a{
+    text-decoration: none !important;
+    cursor: pointer;
+}
+.ion-minus{
+    color: red;
+}
+.ion-android-done{
+    color: #42ac22;
+}
+/*===============general information===============*/
+
+
+/*===============start nav-bar===============*/
+
+.topnav {
+    position: absolute;
+    overflow: hidden;
+    z-index: 200;
+    width: 100%;
+    height: 70px;
+    top: 0;
+    position: fixed;
+    background: linear-gradient(rgba(18, 17, 17, 0.89), rgba(29, 29, 29, 0.9));
+    text-align: center;
+    opacity: 0.8;
+    display: block;
+}
+.scrol-nav{
+    position: absolute;
+    overflow: hidden;
+    z-index: 200;
+    width: 100%;
+    height: 70px;
+    top: 0px;
+    position: fixed;
+    background: linear-gradient(rgb(59, 56, 56), rgb(80, 77, 77));
+    text-align: center;
+    display: block;
+    box-shadow:1px 3px 5px rgba(111, 101, 101, 0.91);
+}
+.mobile-nav-icon{
+    display: none !important;
+    float: right;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.mobile-nav-icon i{
+    font-size: 200%;
+}
+.topnav a{
+    display: inline-block;
+    color: #e6e5e5;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-top: 25px;
+    transition: border-bottom 0.9s;
+    letter-spacing: 1px;
+}
+.topnav a:hover {
+    color: #cec6c6;
+    border-bottom: 1px solid #FFF; 
+}
+.navContents{
+    display: inline-block;
+    width: 50%;
+}
+.navContents a{
+    margin-left: 4%;
+}
+.logo{
+    width: 20%;
+    display: inline-block;
+    float: left;
+    letter-spacing: 3px;
+}
+.logo a{
+    color: aqua;
+}
+.logo a:hover{
+    color: #138888;
+    border-bottom: 0;
+    cursor: pointer;
+}
+.sign{
+    width: 20%;
+    display: inline-block;
+    float: right;
+}
+.sign a{
+    display: inline-block;
+    margin-right: 10px;
+}
+.sign .login{
+    color: rgba(76, 255, 54, 0.94);
+}
+.sign .login:hover{
+    color: rgba(39, 204, 18, 0.74);
+    border-bottom: 1px solid rgba(39, 204, 18, 0.74); 
+}
+.sign .register{
+    color: #ef1212;
+    font-weight: 500;
+}
+.sign .register:hover{
+    color: #9b1616;
+    border-bottom: 1px solid #fa1111;; 
+}
+/*===============End Nav-Bar===============*/
+
+
+
+/*===============Start wrapper===============*/
+.wrapper{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 350px;
+    box-shadow:1px 5px 10px rgba(185, 185, 185, 0.91);
+    margin-top: 70px;
+    background: #fff;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.full-screen-wrapper{
+    height: 100vh;
+}
+.main-logo{
+    width: 70px;
+    height: 70px;
+    border: 2px solid #4ba7a7;
+    font-size: 50px;
+    margin: 20px auto;
+    border-radius: 50%;
+    text-align: center;
+    color: #4ba7a7;
+    line-height: 70px;
+}
+.box{
+    cursor:pointer;
+    border:1px solid #ccc;
+    border-color: #dedede #bababa #aaa #bababa;
+    border-radius: 10px;
+    font-weight: 300;
+}
+
+form{
+    margin: 30px 0;
+    display: block;
+    border: none;
+    background-size: cover;
+    padding: 20px 0;
+    overflow: hidden;
+    text-align: center;
+}
+form div{
+    position: relative;
+    width: 40%;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: top;
+}
+form label, input{
+    display: block;
+}
+form  span{
+    color: red;
+}
+/*---------end wrapper---------*/
+
+
+
+/*---------btn---------*/
+/*blue button*/
+.blue-btn{
+    color: #fff;
+    background:  linear-gradient(rgb(31, 214, 214), rgb(12, 70, 113));
+    padding: 2px 4px;
+}
+.blue-btn:hover {
+    background: linear-gradient(rgb(31, 199, 199), rgb(7, 56, 93));
+    color:  #212121;
+    transform: 0.2s all;
+}
+
+/*yellow btns*/
+.btn.btn-yellow,
+.small-yelow-btn{
+    color: #2a2626;
+    background: linear-gradient(#ffda37, #9b8521)
+}
+.btn.btn-yellow:hover,
+.small-yelow-btn:hover
+{
+    background: linear-gradient(rgba(195, 166, 40, 0.88), rgba(167, 142, 30, 0.86));
+    color: #fff;
+    transform: 0.2s all;
+}
+
+.blue-btn,
+.small-yelow-btn{
+    border-radius: 5px;
+}
+
+.small-yelow-btn{
+    padding: 5px 15px;
+}
+/*big btns*/
+.btn {
+    transition: background 300ms;
+    border-radius: 50px;
+    width: 200px;
+    height: 50px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 29px;
+    padding: 0;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 8px;
+    outline: none;
+    position: relative;
+}
+/*btn icons*/
+.btn.blue-btn i{
+    color: #b9b927;
+    line-height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0 15px;
+    font-size: 20px;
+}
+.btn.blue-btn:hover i{
+    color: rgba(185, 185, 39, 0.79);;
+}
+.btn.btn-small {
+    font-weight: 300;
+}
+/*send btn*/
+.send{
+    display: block;
+    width: 10%;
+    margin: 50px auto 0 ;
+    border-radius: 5px;
+}
+/*chouse photo btn style*/
+.file > input[type="file"] {
+    opacity: 0;
+}
+.file > label {
+    background: linear-gradient(rgb(31, 214, 214), rgb(12, 70, 113));
+    font-size: 17px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    height: 30px;
+    border-radius: 20px;
+    width: 70%;
+}
+.file > label:hover{
+    background: linear-gradient(rgb(31, 199, 199), rgb(7, 56, 93));
+    color:  #e3dede;
+    transform: 0.2s all;
+}
+/*-----------end btn---------*/
+/*---------End Hotel list Section--------*/
+
+/*---------start footer section--------*/
+/*footer section*/
+footer{
+    display: block;
+    width: 100%;
+    height: 350px;
+    background: linear-gradient(rgba(18, 17, 17, 0.89), rgba(29, 29, 29, 0.9));
+    position: fixed;
+    z-index: -100;
+    bottom: 0;
+    text-align: center;
+    color: #d0d0d0;
+}
+
+/*div for footer contents*/
+.full-footer{
+    display: inline-block;
+    margin: 0 auto;
+}
+.full-footer div{
+    display: inline-block;
+    width: 25%;
+    height: 300px;
+    margin: 20px;
+    vertical-align: top;
+    text-align: center;
+}
+
+/*titles in footer*/
+footer h2{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/*ul contents*/
+footer ul{
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+}
+footer ul li span{
+    width: 50%;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+}
+footer ul li i{
+    vertical-align: top;
+    display: inline-block;
+    width: 15%;
+}
+footer li a:link,
+footer li a:visited,
+.social-links li a:link,
+.social-links li a:visited,
+.company-contact,
+.company-contact a,
+footer p
+{
+    text-decoration: none;
+    border: 0;
+    color: #d0d0d0;
+    transition: color 0.2s;
+    font-size: 17px;
+    cursor: pointer;
+}
+.full-footer li a:hover{
+    color:white;
+}
+.full-footer li a:hover  .ion-social-facebook{
+    color: #2b3f6a;
+}
+.full-footer li a:hover  .ion-social-twitter{
+    color: #478fc6;
+}
+.full-footer li a:hover  .ion-social-googleplus{
+    color: #c14232;
+}
+.full-footer li a:hover  .ion-social-instagram{
+    color: #ba2027;
+}
+.full-footer li a:hover  .ion-social-youtube{
+    color: #ad1918;
+}
+/*---------end footer section--------*/
+/*===============End wrapper===============*/
+
+
+
+
+@media only screen and (max-width: 2560px){
+
+}
+
+
+
+@media only screen and (max-width: 1440px){
+
+}
+
+@media only screen and (max-width: 1024px){
+    h1{
+        font-size: 25px;
+    }
+    h2{
+        font-size: 23px;
+    }
+    /*a tags in navbar*/
+    .topnav a{
+        font-size: 15px;
+    }
+    /*big btn*/
+    .btn {
+        width: 150px;
+        height: 50px;
+        font-size: 20px;
+    }
+    /*icone style in blue btn*/
+    .btn.blue-btn i{
+        margin: 0 10px;
+        font-size:15px;
+    }
+
+    /*    footer divs*/
+    .full-footer div{
+        display: inline-block;
+        width: 29%;
+        height: 300px;
+        margin: 10px;
+        vertical-align: top;
+        text-align: center;
+    }
+
+    footer li a:link,
+    footer li a:visited,
+    .social-links li a:link,
+    .social-links li a:visited,
+    .company-contact,
+    .company-contact a,
+    footer p
+    {
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 768px)
+{
+    h1{
+        font-size: 23px;
+    }
+    h2{
+        font-size: 20px;
+    }
+
+    h1:after,
+    h3:after{
+        width: 110px;
+    }
+
+    /*===============start navbar===============*/
+    .topnav a{
+        font-size: 14px;
+    }
+    .navContents{
+        display: inline-block;
+        width: 50%;
+    }
+    .logo{
+        width: 25%;
+    }
+    .logo a{
+        color: aqua;
+    }
+    .logo a:hover{
+        color: #138888;
+        border-bottom: 0;
+        cursor: pointer;
+    }
+    .sign{
+        width: 25%;
+    }
+    /*===============end navbar===============*/
+
+    /*---------start footer section--------*/
+    /*div for footer contents*/
+    .full-footer div{
+        width: 28%;
+        margin: 0;
+    }
+    /*ul contents*/
+    footer ul li span{
+        width: 75%;
+        vertical-align: top;
+    }
+    footer ul li i{
+        width: 10%;
+        margin:0 14px;
+    }
+    footer li a:link,
+    footer li a:visited,
+    .social-links li a:link,
+    .social-links li a:visited,
+    .company-contact,
+    .company-contact a,
+    footer p
+    {
+        font-size: 14px;
+    }
+    /*---------end footer section--------*/
+
+}
+
+@media only screen and (max-width: 670px){
+    /*===============start nav-bar===============*/
+    h1{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 17px;
+    }
+
+    h1:after,
+    h3:after{
+        width: 80px;
+    }
+
+
+    .mobile-nav-icon{
+        display: inline-block !important;
+    }
+
+    .topnav{
+        height: auto;
+    }
+    .scrol-nav{
+        height: 60px;
+    }
+
+    .topnav a{
+        display:block;
+        text-align: left;
+        font-size: 15px;
+        margin-top: 20px;
+    }
+
+    .topnav a:first-child{
+        margin-top: 10px;
+    }
+    .logo{
+        padding-top:10px;
+    }
+
+    .logo a:first-child{
+        float: left;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .logo a:last-child{
+        float: right;
+        margin-top: 6px;
+        color: #fff;
+    }
+
+    .logo,
+    .navContents,
+    .sign{
+        display: block;
+        width: 100%;
+        float: left;
+        margin: 0;
+    }
+
+    .js--main-nav{
+        display: none;
+    }
+    .sign a{
+        margin: 0;
+    }
+
+    .logo a,
+    .navContents a,
+    .sign a
+    {
+        margin-left: 20px;
+
+    }
+    .sign a{
+        margin-top: 10px;
+    }
+    .sign a:last-child{
+        margin-bottom: 10px;
+    }
+
+    /*===============End Nav-Bar===============*/
+    /*big btns*/
+    .btn {
+        width: 120px;
+        height: 30px;
+        font-size: 15px;
+        line-height: 30px;
+    }
+
+    /*icone style in blue btn*/
+    .btn.blue-btn i{
+        vertical-align: top;
+        float: right;
+        line-height: 30px;
+        font-size:12px;
+
+    }
+
+    /*---------start footer section--------*/
+    /*div for footer contents*/
+    .full-footer{
+        height: 300px;
+    }
+    .full-footer div:first-child{
+        display:block;
+        width: 100%;
+        height: auto;
+    }
+    .full-footer div{
+        width: 49%;
+    }
+    /*titles in footer*/
+    footer h2{
+        margin-bottom: 10px;
+    }
+    /*ul contents*/
+    footer ul li {
+        line-height: 22px;
+    } 
+    footer ul li span{
+        width: 60%;
+    }
+    /*---------end footer section--------*/
+}
+
+@media only screen and (max-width: 480px)
+{
+
+}
+
+@media only screen and (max-width: 375px)
+{
+    .wrapper{
+
+        margin-bottom: 400px;
+    }
+
+    .navContents a,
+    .sign a
+    {
+        font-size: 14px;
+        line-height: 5px;
+
+    }
+
+    footer{
+        height: 400px;
+    }
+    footer h2{
+        margin-top: 17px;
+    }
+    footer ul li i{
+        margin:0;
+    } 
+}
+
+@media only screen and (max-width: 320px){
+
+    /*big btns*/
+    .btn {
+        width: 100px;
+        height: 25px;
+        font-size: 13px;
+        line-height: 25px;
+    }
+
+    /*icone style in blue btn*/
+    .btn.blue-btn i{
+        display: none;
+    }
+
+    footer li a:link,
+    footer li a:visited,
+    .social-links li a:link,
+    .social-links li a:visited,
+    .company-contact,
+    .company-contact a,
+    footer p
+    {
+        text-decoration: none;
+        border: 0;
+        color: #d0d0d0;
+        transition: color 0.2s;
+        font-size: 12px;
+        cursor: pointer;
+    }
+}
+

@@ -1,0 +1,370 @@
+h1{
+    margin: 0;
+    padding: 30px;
+    background: rgba(219, 219, 219, 0.26);
+}
+
+h3{
+    margin: 30px auto;
+}
+
+label{
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+i{
+    margin-right:6px;
+}
+
+span{
+    font-size: 15px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+/*btn*/
+
+.hotel-information-buttons,
+.room-information-buttons{
+    text-align: center;
+    display: block;
+}
+
+
+.hotel-information-buttons div{
+    width: 10%;
+    height: 50px;
+    margin: 7px 2px;
+    height: 100px;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    overflow: hidden;
+    vertical-align: top;
+
+}
+
+.hotel-information-buttons div i,
+.hotel-information-buttons div img
+{
+    display: block;
+    margin-right: 6px;
+    color: #464444;   
+}
+
+.hotel-information-buttons div img{
+    width: 30px;
+    margin: 0 auto;
+}
+
+/*end btn*/
+
+/*slider*/
+.slider{
+    width: 51%;
+    height: 350px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 0;
+}
+
+.skitter .info_slide{
+    top: 20px;
+}
+
+.room-slider{
+    text-align: center;
+}
+
+/*end slider*/
+
+
+#full-information-about-hotel
+{
+    display: block;
+    position: relative;
+    height: 0;
+    overflow: hidden;
+}
+
+.description{
+    visibility: hidden;
+    position: absolute; 
+}
+
+
+.room-slider .slider,
+.description-content{
+    width: 60%;
+    border-color: #dedede #bababa #aaa #bababa;
+    -webkit-box-shadow: 5px 5px 30px #ada9a9;
+    box-shadow: 5px 5px 30px #ada9a9;
+    border-radius: 15px;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+
+.description-content{
+    margin: 30px auto;
+    padding: 5px 20px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    background: rgba(240, 240, 240, 0.28);
+}
+
+.description-content div{
+    width: 90%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 25px;
+
+}
+
+.description-content div label{
+    width: 50%;
+    text-align: right;
+}
+.description-content div span{
+    width: 45%;
+    text-align: left;
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/*hotel description*/
+
+.hotel-description{
+    width: 49%;
+    float: right;
+    display: inline-block;
+    padding: 15px;
+}
+
+
+.hotel-description h3{
+    margin-top:0;
+    margin-bottom: 10px;
+}
+
+.hotel-description h3:after{
+    content: "";
+    background: #fff;
+}
+.hotel-description-conten{
+    width: 100%;
+    text-align: left;
+    border: 0;
+}
+.hotel-description-conten div{
+    width: 49%;
+    display: inline-block;
+    text-align: left;
+    margin: 3px 0;
+}
+
+.hotel-description .vertical-line
+{
+    width: 100%;
+}
+
+/*hotel description end*/
+
+.features-content div{
+    width: 49%;
+    display: inline-block;
+    float: left;     
+}
+
+.features-content div span{
+    margin-right: 15px;
+}
+
+/*
+.room{
+display: block;
+}
+*/
+
+
+.room-title h1{
+    background: #fff;
+}
+
+
+.double-room,
+.delux-room{
+    display: none;
+}
+
+.skitter .info_slide
+{
+    padding: 2px 0 2px 2px;
+    color: #dbdad6;
+
+}
+.skitter .info_slide .image_number
+{
+    padding: 2px 7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 2560px){
+
+}
+
+@media only screen and (max-width: 1440px){
+
+}
+
+@media only screen and (max-width: 1024px){    
+
+
+}
+
+@media only screen and (max-width: 768px)
+{
+    /*slider*/
+    .slider{
+
+        width: 100%;
+        display: block;
+    }  
+
+    /*hotel description*/
+
+    .hotel-description{
+        width: 100%;
+        display: block;
+        padding: 15px;
+    }
+
+
+    .hotel-description-conten{
+        width: 100%;
+        text-align: center;
+        border: 0;
+    }
+
+
+    /*btn*/
+
+    .hotel-information-buttons,
+    .room-information-buttons{
+        text-align: center;
+        display: block;
+    }
+
+
+    .hotel-information-buttons div{
+        width: 13%;
+    }
+
+    .room-slider .slider,
+    .description-content{
+        width: 80%;
+    }
+    .room-slider .slider{
+        margin: 0 auto;
+    }
+
+}
+
+@media only screen and (max-width: 670px){
+
+}
+
+@media only screen and (max-width: 480px)
+{
+    .wrapper{
+        top: -12px;
+    }
+
+    .hotel-description{
+        width: 100%;
+        display: block;
+        padding: 15px;
+
+    }
+
+
+    /*hotel description*/
+
+    .hotel-description{
+        padding: 5px;
+    }
+
+    .hotel-description-conten{
+        width: 100%;
+        text-align: left;
+        border: 0;
+    }
+    .hotel-description-conten div{
+        width: 100%;
+    }
+
+    .hotel-information-buttons div{
+        width: 20%;
+    }
+    .room-slider .slider,
+    .description-content{
+        width: 90%;
+    }
+
+    .description-content div label{
+        width: 40%;
+        text-align: right;
+    }
+    .description-content div span,
+    {
+        width: 45%;
+        text-align: left;
+        margin: 0;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+}
+
+@media only screen and (max-width: 375px)
+{
+  
+
+
+    .hotel-information-buttons div{
+        width: 27%;
+    }
+}
+
+@media only screen and (max-width: 320px){
+
+
+}
+
+
+
+
+
+
+
+
+

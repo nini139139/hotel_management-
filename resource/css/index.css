@@ -1,0 +1,444 @@
+/*===============Wrapper===============*/
+.wrapper{
+    margin-top:100vh;
+    background-color: rgb(229, 224, 224);
+}
+
+
+/*----------Slider middle content--------*/
+
+/*slider chouse number box*/
+.skitter .info_slide
+{
+    position: absolute;
+    top: 110px;
+    left: 15px;
+    z-index: 100;
+    background-color: #000;
+    color: #fff;
+    font: bold 11px arial;
+    padding: 5px 0 5px 5px;
+    border-radius: 5px;
+    opacity: 0.75
+}
+.skitter .info_slide .image_number
+{
+
+    background-color: #333;
+    float: left;
+    padding: 2px 10px;
+    margin: 0 5px 0 0;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all 0.2s
+}
+.skitter .info_slide .image_number:hover
+{
+
+    background-color: #000
+}
+/*end slider chouse number box*/
+
+.label_skitter {
+    z-index: 150;
+    position: absolute;
+    top:38%;
+    width: 100%;
+    background: linear-gradient(45deg, rgba(10, 10, 10, 0.38) 6%, rgba(17, 18, 18, 0.53) 90%);
+}
+
+.label_skitter h1{
+    color: #fff;
+}
+
+.label_skitter p {
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/*----------- end Slider middle content---------*/
+
+
+
+/*---------search section---------*/
+
+/*search section main style*/
+.search {
+    width: 100%;
+    display: inline-block;
+    z-index: 100000;
+    text-align-last: center;
+    overflow: hidden;
+}
+
+/*search section title*/
+.search h1{
+    margin-top: 70px;
+}
+
+/*forms, divs, innputs, slects style in search section */
+.search form{
+    margin: 0 auto;
+    text-align: center;
+}
+.search div{
+    padding: 10px 0;
+    width: 15%;
+    vertical-align: bottom;
+    display: inline-block;
+    margin: 15px auto;
+}
+.search div select,input
+{
+    width:90%;
+    height: 30px;
+    text-align-last:center;
+    border-color: #dedede #bababa #aaa #bababa;
+    vertical-align: top;
+    display: inline-block;
+    margin: 10px;
+}
+.search i{
+    margin-right: 10px;
+}
+.search label{
+    margin: 5px;
+}
+.search input{
+    padding-left: 10px;
+    color: black;
+}
+/*search btn*/
+.search form div:last-child{
+    width: auto;
+    display: inline-block;
+    overflow: hidden;
+    font-weight: 300;
+    margin-bottom: 28px;
+}
+.search form div:last-child span{
+    color: black;}
+/*----------end search section---------*/
+
+
+
+/*---------Hotel list Section--------*/
+/* hotel list main style*/
+.hotel-list{
+    width: 100%;
+    height: auto;
+    display: block;
+    overflow: hidden;
+}
+.hotel-list h1{
+    margin: 40px;
+}
+/*hotel short descriptions div*/
+.hotel-info{
+    width: 31%;
+    height: 320px;
+    margin: 15px 7px;
+    display: inline-block;  
+    background-color: #fff;
+    vertical-align: top;
+    box-shadow: 5px 5px 30px #ada9a9;
+    overflow: hidden;
+    position: relative;
+    transition: 0.3s all;
+}
+.hotel-info:hover{
+    border-radius: 60px;
+}
+
+/*hotel description top part*/
+.hotel-info-top{
+    display: block;
+    height: 150px;
+}
+
+.img-short-description,
+.about-hotel{
+    height: 150px;
+    width: 50%;
+    display: inline-block;
+    float: left;
+    border-bottom: 1px solid #ad9d9d;
+}
+
+/*contents title*/
+.hotel-contents h4{
+    display: block;
+    margin: 5px 0;
+    text-align: center;
+}
+
+
+/*left side in top part*/
+.hotel-contents img{
+    width: 100%;
+    height: 150px;
+    vertical-align: top;
+}
+
+/*right side in top part*/
+.about-hotel{
+    text-align: left;
+    display: block;
+    font-size: 15px;
+    overflow: hidden;
+    padding-left: 5px;
+}
+.about-hotel ul i{
+    font-size: 10px;
+}
+
+/*short description side*/
+.short-description p{
+    font-weight: 200;
+    margin-bottom: 15px;
+}
+
+/*more information bottom*/
+.btn-hotel-list{
+    margin: 20px;
+}
+/*---------End Hotel list Section--------*/
+
+
+
+
+
+/*===============responsive===============*/
+
+@media only screen and (max-width: 2560px){
+
+}
+
+
+
+@media only screen and (max-width: 1440px){
+
+}
+
+@media only screen and (max-width: 1024px){
+
+    /*===============wrapper content===============*/
+    /*wrapper distance from top*/
+    .wrapper{
+        margin-top:545px;
+    }
+    /*search btn in search bar*/
+    .search form div:last-child{
+        margin-bottom: 38px;
+        padding: 0;
+    }
+    /*===============middle content===============*/
+    /*slider middle content*/
+    .label_skitter {
+        top:37%;
+    }
+    /*text sizi in middle content*/
+    .label_skitter p{
+        font-size: 15px;
+    }
+    /*===============end middle content===============*/
+    /*short description div contents*/
+    .hotel-info{
+        width: 45%;
+        height: 320px;
+        margin: 15px 15px;
+    }
+    /*===============end wrapper content===============*/
+}
+
+@media only screen and (max-width: 768px)
+{
+    /*===============wrapper content===============*/
+    /*wrapper distance from top*/
+    .wrapper{
+        margin-top:435px;
+    }
+
+    /*---------search section---------*/
+
+    /*search section title*/
+    .search h1{
+        margin-top: 50px;
+    }
+    /*forms, divs, innputs, slects style in search section */
+    .search div{
+        width: 30%;
+        vertical-align: bottom;
+        margin: 0 auto;
+    }
+    .search div select,input
+    {
+        margin:0 3px;
+    }
+    /*search btn*/
+    .search form div:last-child{
+        width: 30%;
+        margin-bottom: 13px;
+    }
+
+    .search form div:last-child i{
+        padding: 20px;
+    }
+    .search form div:last-child span{
+        padding-right: 40px;
+    }
+    /*----------end search section---------*/
+
+    /*----------Slider middle content--------*/
+
+    .label_skitter {
+        top:38%;
+    }
+
+    .label_skitter p {
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+
+
+    .skitter .info_slide
+    {
+        top: 200px;
+        padding: 5px 0 5px 5px;
+    }
+    /*----------- end Slider middle content---------*/
+
+}
+
+@media only screen and (max-width: 670px){
+    /*===============wrapper content===============*/
+    /*wrapper distance from top*/
+    .wrapper{
+        margin-top:236px;
+    }
+    /*----------Slider middle content--------*/
+
+
+    .label_skitter {
+        top:42%;
+        width: 100%;
+    }
+
+    .label_skitter h1{
+        margin: 0;
+    }
+    .label_skitter p {
+        color: #fff;
+        text-align: center;
+        font-size: 13px;
+        margin-bottom: 0px;
+    }
+
+    /*----------- end Slider middle content---------*/
+    /*search btn*/
+    .search form div:last-child i{
+        padding: 0;
+    }
+    .search form div:last-child span{
+        padding-right: 0;
+    }
+    /*----------end search section---------*/
+
+    /*short description div contents*/
+    .hotel-info{
+        width: 93%;
+        height: 320px;
+        margin: 15px 15px;
+    }
+
+
+}
+
+@media only screen and (max-width: 480px)
+{
+  
+}
+
+@media only screen and (max-width: 375px)
+{
+    h1{
+        font-size: 18px;
+    }
+    h1:after{
+        content: "";
+        width: 70px;
+        background-color: #fdd835;;
+        height: 2px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    /*
+    /*===============wrapper content===============*/
+    /*wrapper distance from top*/
+    .wrapper{
+        margin-top:210px;
+    }
+    */
+    /*search btn*/
+    .search form div:last-child
+    {
+        border-radius: 10px;
+    }
+
+    /*slider chouse number box*/
+    .skitter .info_slide
+    {
+        top: 60px !important;
+        padding: 3px 0 3px 3px;
+    }
+     /*slider chouse number box*/
+
+    .skitter .info_slide .image_number
+    {
+        padding: 1px 3px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    h1{
+        font-size: 17px;
+    }
+    .wrapper{
+        margin-top:180px;
+    }
+    .label_skitter {
+        top: 32%;
+    }
+    .label_skitter p {
+        /*        display: none;*/
+        top: 10% !important;
+    }
+
+    /*slider chouse number box*/
+
+    .skitter .info_slide .image_number
+    {
+        padding: 1px 4px;
+    }
+    /*end slider chouse number box*/
+    .skitter .info_slide
+    {
+        display: none !important;
+        top: 0;
+    }
+
+    /*search btn*/
+    .search form div:last-child{
+        padding: 0;
+    }
+    .search form div:last-child i{
+        padding: 0;
+        font-size: 15px;
+    }
+    
+}
+

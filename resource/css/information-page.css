@@ -1,0 +1,47 @@
+.wrapper{
+     background-image:  url(../img/SlideImg/example/regist.jpg);
+    background-size: cover;
+    color: #fff;
+}
+
+
+form{
+    text-align: center;
+    margin: 50px;
+}
+
+form div{
+    padding: 30px;
+    text-align: left;
+    background: rgba(163, 161, 161, 0.22);
+    border-radius: 15px;
+}
+
+
+form label{
+    margin: 10px 0;
+    font-weight: 500;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+form input{
+    width: 90%;
+    height:30px;
+}
+
+.small-yelow-btn{
+    text-align: center;
+    width: 30%;
+    border:none;
+}
+
+
+.main-logo{
+    width: 80px;
+    height: 80px;
+    font-size: 80px;
+    color: #67a74b;
+    border: 0;
+    background-color: #fff;
+}
